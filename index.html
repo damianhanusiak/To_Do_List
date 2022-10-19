@@ -5,11 +5,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/69b5ae34e5.js" crossorigin="anonymous"></script>
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>ToDoList App</title>
 </head>
 
 <body>
+    <div class="container">
+        <div class="header">
+            <h1>To Do List</h1>
+            <input type="text" class="task-input" placeholder="Enter the content of your task ...">
+            <button class="button-add">Add task</button>
+        </div>
 
+        <div class="tasks-list">
+            <h2>Tasks list:</h2>
+            <p class="error">No tasks on the list</p>
+
+            <ul>
+                <li>
+                    Drink coffee
+                    <div class="tools">
+                        <button class="complete">
+                            <i class="fa-solid fa-square-check"></i>
+                        </button>
+                        <button class="edit">
+                            Edit
+                        </button>
+                        <button class="delete">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="edit-window">
+        <h2>Edit your task:</h2>
+        <div class="edit-window-body">
+            <input type="text" class="edit-input" placeholder="Enter the new content of your task ...">
+            <button class="edit-btn accept">Accept</button>
+            <button class="edit-btn cancel">Cancel</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
