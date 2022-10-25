@@ -134,4 +134,82 @@ header h1 {
 
 .edit-window {
 	display: none;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 1024px;
+	background-color: #191919;
+	border-radius: 6px;
+	padding: 50px;
+}
+
+.edit-window h2 {
+	padding: 20px;
+	color: white;
+}
+
+.edit-windows-info {
+	color: white;
+	margin-bottom: 20px;
+}
+
+.edit-window-body {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 90%;
+	padding: 10px;
+}
+
+.edit-input {
+	width: 100%;
+	border: none;
+	background: none;
+	outline: none;
+	border: 3px solid var(--blue);
+	padding: 15px;
+	border-radius: 5px;
+	text-align: center;
+	font-size: 16px;
+	color: white;
+	transition: 0.3s;
+}
+
+.edit-input:focus {
+	width: 100%;
+	border: 3px solid var(--neon-green);
+}
+
+.edit-btn {
+	border: none;
+	background: none;
+	margin-left: 50px;
+	text-align: center;
+	border-radius: 5px;
+	color: white;
+	text-transform: uppercase;
+	padding: 15px 30px;
+	cursor: pointer;
+	margin-top: 20px;
+	transition: 0.3s;
+}
+
+.accept {
+	border: 3px solid var(--neon-green);
+}
+
+.accept:hover {
+	background-color: var(--neon-green);
+}
+
+.cancel {
+	border: 3px solid red;
+}
+
+.cancel:hover {
+	background-color: red;
 }
