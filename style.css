@@ -44,7 +44,7 @@ header h1 {
 .task-input {
 	width: 50%;
 	border: none;
-	background: none;
+	background-color: transparent;
 	outline: none;
 	border: 3px solid var(--blue);
 	padding: 15px;
@@ -62,7 +62,7 @@ header h1 {
 
 .button-add {
 	border: none;
-	background: none;
+	background-color: transparent;
 	margin-left: 50px;
 	text-align: center;
 	border: 3px solid var(--neon-green);
@@ -72,32 +72,34 @@ header h1 {
 	padding: 15px 30px;
 	cursor: pointer;
 	transition: 0.3s;
+	font-weight: bold;
 }
 
 .button-add:hover {
 	background-color: var(--neon-green);
+	font-size: 15px;
 }
 
 .tasks-list {
-	padding: 25px 0;
+	padding: 30px 0;
 }
 
 .tasks-list h2 {
 	text-transform: uppercase;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 }
 
 .tasks-list li {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 15px 10px;
+	margin: 20px;
 	padding-left: 20px;
 	border-radius: 5px;
 	text-align: left;
 	list-style: none;
 	font-size: 18px;
-	background-color: lightgray;
+	background-color: rgb(221, 221, 221);
 }
 
 .tools {
@@ -109,7 +111,7 @@ header h1 {
 }
 
 .tools button {
-	padding: 15px 10px;
+	padding: 15px 20px;
 	font-size: 18px;
 	border: none;
 	background: none;
@@ -121,13 +123,25 @@ header h1 {
 	color: var(--neon-green);
 }
 
+.complete:hover {
+	color: rgb(59, 141, 20);
+}
+
 .edit {
 	color: var(--blue);
 	text-transform: uppercase;
 	font-weight: 700;
 }
 
+.edit:hover {
+	color: rgb(61, 73, 236);
+}
+
 .delete {
+	color: tomato;
+}
+
+.delete:hover {
 	color: red;
 }
 
@@ -156,7 +170,7 @@ header h1 {
 	color: white;
 }
 
-.edit-windows-info {
+.edit-window-info {
 	color: white;
 	margin-bottom: 20px;
 }
@@ -170,9 +184,9 @@ header h1 {
 }
 
 .edit-input {
-	width: 100%;
+	width: 85%;
 	border: none;
-	background: none;
+	background-color: transparent;
 	outline: none;
 	border: 3px solid var(--blue);
 	padding: 15px;
@@ -190,9 +204,8 @@ header h1 {
 
 .edit-btn {
 	border: none;
-	background: none;
-	margin-left: 50px;
-	text-align: center;
+	background-color: transparent;
+	margin-left: 20px;
 	border-radius: 5px;
 	color: white;
 	text-transform: uppercase;
@@ -208,6 +221,7 @@ header h1 {
 
 .accept:hover {
 	background-color: var(--neon-green);
+	font-weight: bold;
 }
 
 .cancel {
@@ -216,4 +230,5 @@ header h1 {
 
 .cancel:hover {
 	background-color: red;
+	font-weight: bold;
 }
